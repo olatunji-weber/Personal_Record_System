@@ -1,0 +1,89 @@
+    1  ls -a
+    2  git clone https://github.com/olatunji-weber/personal-record-management-system.git
+    3  ls
+    4  rm -r personal-record-management-system/
+    5  ls
+    6  git clone "https://github.com/olatunji-weber/Personal_Record_System.git"
+    7  cd Personal_Record_System/
+    8  mkdir credentials
+    9  mkdir notes backups
+   10  ls
+   11  cd credentials
+   12  touch usernames.txt passwords.txt email_addresses.txt
+   13  cd ./notes
+   14  cd ./notes/
+   15  cd ..
+   16  cd notes
+   17  touch personal_notes.txt important_dates.txt
+   18  cd ..
+   19  ls
+   20  cd backups/
+   21  pwd
+   22  ls /
+   23  ls /home
+   24  whoami
+   25  ls /home/
+   26  cd /home
+   27  ls
+   28  cd student1
+   29  ls
+   30  cd ..
+   31  ls student1/shared/
+   32  cat student1/shared/student1_file.txt 
+   33  ls
+   34  rm -r student1
+   35  sudo rm -r student1
+   36  ls
+   37  cd student2/
+   38  ls
+   39  cd ..
+   40  rm -r student2/
+   41  ls
+   42  cd ayinkulume/
+   43  ls
+   44  cd Personal_Record_System/
+   45  ls
+   46  ls -a
+   47  git status
+   48  git add .
+   49  git commit -m "First Commit for Personal Record System."
+   50  git push -a origin master
+   51  git push -u origin master
+   52  git config --global user.name olatunji-weber
+   53  git config --list --global | grep credential
+   54  git push -u origin master
+   55  ls
+   56  whoami
+   57  pwd
+   58  tar -czvf /home/ayinkulume/Personal_Record_System/ayinkulume_backup.tar.gz /home/ayinkulume
+   59  ls
+   60  mv ayinkulume_backup.tar.gz backups/
+   61  ls
+   62  git add .
+   63  git commit -m "Adding the Backups..."
+   64  git push -u origin master
+   65  tar -czvf /home/ayinkulume/Personal_Record_System/backups/ayinkulume_backup1.tar.gz /home/ayinkulume
+   66  ls
+   67  ls backups/
+   68  git add .
+   69  git commit -m "Adding the Backups1..."
+   70  git push -u origin master
+   71  tar -czvf /home/ayinkulume/Personal_Record_System/backups/ayinkulume_backup2.tar.gz /home/ayinkulume
+   72  clear
+   73  ls
+   74  cd credentials/
+   75  ls
+   76  nano passwords.txt 
+   77  ls -a
+   78  nano usernames.txt 
+   79  nano email_addresses.txt 
+   80  cd ..
+   81  ls
+   82  cd notes/
+   83  ls
+   84  nano important_dates.txt 
+   85  nano personal_notes.txt 
+   86  cd ..
+   87  ls
+   88  git add .
+   89  history > all_commands.txt
