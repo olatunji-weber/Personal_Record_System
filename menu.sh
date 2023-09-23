@@ -2,13 +2,24 @@
 
 while true; do
     clear
-    echo "Personal Record Management System Menu"
-    echo "-------------------------------------"
-    echo "N - Create New Record"
-    echo "E - Edit Existing Records"
-    echo "S - Search Records"
-    echo "G - Generate Report"
-    echo "Q - Quit"
+    echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@                                              @@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@     Personal Record Management System Menu   @@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@                                              @@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@                                              @@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@     N - Create New Record                    @@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@     E - Edit Existing Records                @@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@     S - Search Records                       @@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@     G - Generate Report                      @@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@                                              @@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    echo "                                                                                  "
 
     read -p "Enter your choice: " choice
 
@@ -21,8 +32,9 @@ while true; do
         E|e)
             # Edit existing records
             echo "Enter the record to edit:"
-            read record_name
-            nano "$record_name"
+            source edit_record.sh
+            #read record_name
+            #nano "$record_name"
             ;;
         S|s)
             # Search for specific records
